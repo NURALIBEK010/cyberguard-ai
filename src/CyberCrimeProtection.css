@@ -1,0 +1,173 @@
+.cybercrime-page {
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.cybercrime-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cybercrime-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.cybercrime-header p {
+  margin-top: 8px;
+  opacity: 0.7;
+}
+
+.protection-status {
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(0, 200, 120, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.protection-status span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #00d084;
+}
+
+.protection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.protection-card {
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.protection-card h2 {
+  margin-top: 0;
+}
+
+.protection-card textarea {
+  width: 100%;
+  min-height: 180px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.protection-card button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.protection-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.empty-result {
+  text-align: center;
+  padding: 50px 20px;
+  opacity: 0.6;
+}
+
+.shield {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.scanning {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  border: 4px solid #333;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.analysis-result {
+  text-align: center;
+}
+
+.risk-level {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.risk-level.low {
+  background: rgba(0, 200, 120, 0.15);
+}
+
+.risk-level.medium {
+  background: rgba(255, 180, 0, 0.15);
+}
+
+.risk-level.high {
+  background: rgba(255, 60, 60, 0.15);
+}
+
+.risk-score strong {
+  display: block;
+  font-size: 45px;
+}
+
+.risk-score span {
+  opacity: 0.6;
+}
+
+.detected {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.indicator {
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  background: rgba(255, 60, 60, 0.08);
+}
+
+@media (max-width: 900px) {
+  .protection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cybercrime-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

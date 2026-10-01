@@ -1,0 +1,33 @@
+﻿{
+    "name":  "cyberguard-ai",
+    "private":  true,
+    "version":  "1.0.0",
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build":  "tsc -b \u0026\u0026 vite build",
+                    "check":  "tsc --noEmit",
+                    "preview":  "vite preview",
+                    "start":  "node server/index.cjs"
+                },
+    "dependencies":  {
+                         "bcryptjs":  "^3.0.3",
+                         "better-sqlite3":  "^13.0.3",
+                         "cors":  "^2.8.6",
+                         "dotenv":  "^18.0.5",
+                         "express":  "^5.2.1",
+                         "express-rate-limit":  "^8.7.0",
+                         "helmet":  "^8.3.0",
+                         "jsonwebtoken":  "^9.0.3",
+                         "nodemailer":  "^10.0.13",
+                         "react":  "^19.1.1",
+                         "react-dom":  "^19.1.1"
+                     },
+    "devDependencies":  {
+                            "@types/react":  "^19.1.10",
+                            "@types/react-dom":  "^19.1.7",
+                            "@vitejs/plugin-react":  "^5.0.2",
+                            "typescript":  "^5.9.2",
+                            "vite":  "^7.1.3"
+                        }
+}

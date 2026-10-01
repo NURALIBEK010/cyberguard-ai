@@ -1,0 +1,17 @@
+﻿node_modules/
+dist/
+.env
+server/data/
+*.db-shm
+*.db-wal
+package.json.backup
+src/api.ts.backup
+server/index.cjs.backup
+
+*.db
+*.db-shm
+*.db-wal
+
+*.db
+*.db-shm
+*.db-wal
